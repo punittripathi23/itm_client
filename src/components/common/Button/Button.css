@@ -1,0 +1,99 @@
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-1);
+  border-radius: var(--radius-md);
+  font-family: var(--font-sans);
+  font-weight: 600;
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: background-color var(--transition-fast), border-color var(--transition-fast);
+  white-space: nowrap;
+  line-height: 1;
+}
+
+.btn:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
+.btn-full-width {
+  width: 100%;
+}
+
+/* 3 CTA Hierarchy Levels (Zero Gradients) */
+/* Level 1: Primary Navy / Accent Blue (Dark Mode) */
+.btn-primary {
+  background-color: var(--accent-primary);
+  color: var(--text-on-header);
+  border-color: var(--accent-primary);
+}
+
+.btn-primary:hover:not(:disabled) {
+  opacity: 0.92;
+}
+
+/* Level 2: Secondary / Surface Outline */
+.btn-secondary {
+  background-color: var(--bg-surface);
+  color: var(--text-primary);
+  border-color: var(--border-strong);
+}
+
+.btn-secondary:hover:not(:disabled) {
+  background-color: var(--bg-elevated);
+  border-color: var(--border-focus);
+}
+
+/* Level 3: Tertiary Link */
+.btn-tertiary, .btn-text {
+  background-color: transparent;
+  color: var(--accent-teal);
+  border-color: transparent;
+  padding: 4px 8px !important;
+}
+
+.btn-tertiary:hover:not(:disabled), .btn-text:hover:not(:disabled) {
+  color: var(--accent-teal);
+  text-decoration: underline;
+}
+
+.btn-danger {
+  background-color: var(--color-status-error);
+  color: #ffffff;
+  border-color: var(--color-status-error);
+}
+
+.btn-danger:hover:not(:disabled) {
+  background-color: #b91c1c;
+}
+
+/* Sizes */
+.btn-small, .btn-sm {
+  height: 32px;
+  padding: 0 12px;
+  font-size: 0.8125rem;
+}
+
+.btn-medium, .btn-md {
+  height: 40px;
+  padding: 0 16px;
+  font-size: 0.875rem;
+}
+
+.btn-large, .btn-lg {
+  height: 48px;
+  padding: 0 24px;
+  font-size: 1rem;
+}
+
+.btn-loading {
+  gap: var(--space-1);
+}
+
+.btn-icon {
+  flex-shrink: 0;
+}
+
+

@@ -1,0 +1,111 @@
+.conference-highlights-section {
+  background-color: var(--bg-primary);
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.conference-grid {
+  margin-top: var(--space-2);
+}
+
+.conference-card {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: var(--space-6);
+  box-shadow: var(--shadow-card);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: var(--space-2);
+  transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.conference-card:hover {
+  border-color: var(--border-strong);
+  box-shadow: 0 4px 6px -1px rgba(15, 23, 42, 0.08), 0 2px 4px -2px rgba(15, 23, 42, 0.04);
+}
+
+[data-theme="dark"] .conference-card:hover {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.5), 0 2px 4px -2px rgba(0, 0, 0, 0.3);
+}
+
+.conf-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.conf-acronym {
+  font-size: 0.8125rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  background-color: var(--bg-elevated);
+  padding: 2px 8px;
+  border-radius: var(--radius-xs);
+  border: 1px solid var(--border-subtle);
+  letter-spacing: 0.05em;
+}
+
+.conf-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  line-height: 1.35;
+  margin: 0;
+}
+
+.conf-details-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  background-color: var(--bg-elevated);
+  padding: var(--space-2);
+  border-radius: var(--radius-xs);
+  border-left: 3px solid var(--accent-teal);
+}
+
+.conf-detail-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.8125rem;
+  color: var(--text-secondary);
+}
+
+.detail-icon {
+  color: var(--accent-teal);
+  flex-shrink: 0;
+}
+
+.cfp-highlight {
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+.conf-indexing-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+  font-size: 0.75rem;
+}
+
+.indexing-title {
+  font-weight: 600;
+  color: var(--text-tertiary);
+}
+
+.conf-badge-pill {
+  background-color: var(--bg-elevated);
+  color: var(--text-primary);
+  border: 1px solid var(--border-subtle);
+  padding: 1px 6px;
+  border-radius: 2px;
+  font-weight: 600;
+}
+
+.full-width {
+  width: 100%;
+  justify-content: center;
+}
+

@@ -1,0 +1,155 @@
+.conferences-root {
+  padding-top: 3rem;
+  padding-bottom: 5rem;
+}
+
+.conferences-page-header {
+  margin-bottom: 3rem;
+}
+
+.conferences-page-header h1 {
+  font-size: 2.2rem;
+  margin-bottom: 0.25rem;
+}
+
+.conferences-page-header p {
+  color: var(--text-secondary);
+}
+
+.conferences-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.section-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  border-bottom: 2px solid var(--border);
+  padding-bottom: 0.5rem;
+}
+
+.conference-card {
+  border-radius: var(--radius-xl);
+  border: 1px solid var(--border);
+  padding: 2rem;
+  background: var(--bg-secondary);
+  display: flex;
+  flex-direction: column;
+}
+
+.conference-card.past {
+  opacity: 0.85;
+}
+
+.card-header-row {
+  margin-bottom: 1.25rem;
+}
+
+.event-date-badge {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  font-weight: 600;
+}
+
+.conf-title {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.conf-location {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.location-icon {
+  color: var(--primary);
+}
+
+.conf-desc {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: var(--text-tertiary);
+  margin-bottom: 2rem;
+  flex: 1;
+}
+
+.conf-actions {
+  padding-top: 1.25rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.dates-text {
+  color: var(--text-secondary);
+}
+
+.mt-4 {
+  margin-top: 3.5rem;
+}
+
+/* Schedule timelines */
+.schedule-intro {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+}
+
+.schedule-timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.timeline-item {
+  gap: 1.25rem;
+  align-items: stretch;
+}
+
+.timeline-badge {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: var(--primary-light);
+  color: var(--primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  border: 1px solid var(--primary);
+}
+
+.timeline-info {
+  flex: 1;
+  padding: 1rem;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border);
+}
+
+.track-time {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--primary);
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+.track-title {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.empty-schedule {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  border-radius: var(--radius-md);
+}
+
+.py-2 { padding: 1.5rem 0; }

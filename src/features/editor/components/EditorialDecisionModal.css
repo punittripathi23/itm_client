@@ -1,0 +1,40 @@
+.editorial-decision-modal {
+  padding-top: 0.5rem;
+}
+
+.decision-options-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+}
+
+.decision-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--border-color, #cbd5e1);
+  border-radius: 8px;
+  background-color: #ffffff;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #334155;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.decision-btn:hover {
+  background-color: #f8fafc;
+}
+
+.decision-btn.selected {
+  border-color: #2563eb;
+  background-color: #eff6ff;
+  color: #1e40af;
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.2);
+}
+
+.text-blue { color: #2563eb; }
+.text-orange { color: #ea580c; }
+.text-green { color: #16a34a; }
+.text-red { color: #dc2626; }

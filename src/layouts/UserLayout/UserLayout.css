@@ -1,0 +1,108 @@
+.user-layout-root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.user-dashboard-header {
+  background: radial-gradient(circle at top right, var(--primary-light), transparent 50%),
+              var(--bg-secondary);
+  border-bottom: 1px solid var(--border);
+  padding: 3rem 0 2rem 0;
+  margin-top: 70px;
+}
+
+.dashboard-header-content h1 {
+  font-size: 1.8rem;
+  font-weight: 800;
+  margin-bottom: 0.25rem;
+}
+
+.dashboard-header-content p {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+.user-dashboard-container {
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+  flex: 1;
+}
+
+.user-dashboard-grid {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  gap: 2rem;
+  align-items: start;
+}
+
+.user-sidebar {
+  border-radius: var(--radius-xl);
+  border: 1px solid var(--border);
+  padding: 1.25rem;
+}
+
+.user-sidebar-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.user-sidebar-link {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 1rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  border-radius: var(--radius-md);
+  transition: all var(--transition-fast) ease;
+}
+
+.user-sidebar-link:hover {
+  background: var(--bg-tertiary);
+  color: var(--primary);
+}
+
+.user-sidebar-link.active {
+  background: var(--primary-light);
+  color: var(--primary);
+}
+
+.user-dashboard-content {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-xl);
+  padding: 2rem;
+  box-shadow: var(--shadow-sm);
+  min-height: 450px;
+}
+
+@media (max-width: 768px) {
+  .user-dashboard-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .user-sidebar {
+    position: sticky;
+    top: 80px;
+    z-index: 10;
+  }
+  
+  .user-sidebar-menu {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  
+  .user-sidebar-link {
+    flex: 1;
+    justify-content: center;
+    padding: 0.5rem;
+    font-size: 0.85rem;
+  }
+  
+  .user-dashboard-content {
+    padding: 1.25rem;
+  }
+}

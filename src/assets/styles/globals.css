@@ -1,0 +1,208 @@
+/* Globals CSS - Academic Publication Platform Layout & Utilities */
+
+@import './variables.css';
+@import './reset.css';
+@import './animations.css';
+
+/* Global Base Reset & Dual-Theme Compatibility */
+html {
+  color-scheme: light dark;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: background-color var(--transition-fast), color var(--transition-fast);
+}
+
+/* Accessibility Focus States */
+:focus-visible {
+  outline: 2px solid var(--border-focus);
+  outline-offset: 1px;
+}
+
+.skip-to-content {
+  position: absolute;
+  top: -100px;
+  left: 1rem;
+  background: var(--bg-header);
+  color: var(--text-on-header);
+  padding: var(--space-1) var(--space-3);
+  z-index: 9999;
+  border-radius: var(--radius-sm);
+  transition: top var(--transition-fast);
+}
+
+.skip-to-content:focus {
+  top: 1rem;
+}
+
+/* Academic Containers */
+.container {
+  width: 100%;
+  max-width: var(--container-max);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--space-3);
+  padding-right: var(--space-3);
+}
+
+/* Typography Hierarchy */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-sans);
+  font-weight: 700;
+  color: var(--text-primary);
+  line-height: 1.25;
+  letter-spacing: -0.01em;
+}
+
+h1 { font-size: 2.25rem; font-weight: 700; }
+h2 { font-size: 1.75rem; font-weight: 700; }
+h3 { font-size: 1.25rem; font-weight: 600; }
+h4 { font-size: 1.125rem; font-weight: 600; }
+
+/* Academic Abstract Measure Limit (70-80 chars) */
+.academic-abstract {
+  font-family: var(--font-serif);
+  font-size: 0.9375rem;
+  line-height: 1.65;
+  color: var(--text-secondary);
+  max-width: var(--text-measure-academic);
+}
+
+
+/* Button Component Hierarchy (3 Levels) */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-1);
+  padding: 10px 18px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: all var(--transition-fast);
+  text-decoration: none;
+  line-height: 1;
+}
+
+/* Level 1 CTA: Primary Teal Solid */
+.btn-primary {
+  background-color: var(--color-accent-teal);
+  color: var(--color-secondary-white);
+  border-color: var(--color-accent-teal);
+}
+.btn-primary:hover {
+  background-color: var(--color-accent-teal-hover);
+  border-color: var(--color-accent-teal-hover);
+}
+
+/* Level 2 CTA: Secondary Navy / Muted Outline */
+.btn-secondary {
+  background-color: var(--color-secondary-white);
+  color: var(--color-primary-navy);
+  border-color: var(--color-border-subtle);
+}
+.btn-secondary:hover {
+  background-color: var(--color-bg-subtle);
+  border-color: var(--color-border-hover);
+}
+
+/* Level 3 CTA: Tertiary Text-only Link */
+.btn-tertiary {
+  background-color: transparent;
+  color: var(--color-accent-teal);
+  padding: var(--space-1) var(--space-1);
+}
+.btn-tertiary:hover {
+  color: var(--color-accent-teal-hover);
+  text-decoration: underline;
+}
+
+.btn-navy {
+  background-color: var(--color-primary-navy);
+  color: var(--color-secondary-white);
+}
+.btn-navy:hover {
+  background-color: var(--color-navy-800);
+}
+
+.btn-sm {
+  padding: 6px 12px;
+  font-size: 0.8125rem;
+}
+
+.btn-lg {
+  padding: 14px 24px;
+  font-size: 1rem;
+}
+
+/* Card Rules - Restrained, No Floating Excess */
+.academic-card {
+  background-color: var(--color-bg-card);
+  border: 1px solid var(--color-border-subtle);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-card);
+  padding: var(--space-3);
+  transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.academic-card:hover {
+  border-color: var(--color-border-hover);
+  box-shadow: var(--shadow-card-hover);
+}
+
+/* Grid System (8pt Grid Spacing) */
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-3);
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--space-3);
+}
+
+.grid-4 {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: var(--space-3);
+}
+
+@media (max-width: 1024px) {
+  .grid-4 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .grid-3 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+@media (max-width: 640px) {
+  .grid-4, .grid-3, .grid-2 { grid-template-columns: 1fr; }
+  .container { padding-left: var(--space-2); padding-right: var(--space-2); }
+}
+
+/* Section Spacing Grid (64px - 96px) */
+.section-padding {
+  padding-top: var(--space-8);
+  padding-bottom: var(--space-8);
+}
+
+.section-title {
+  font-size: 1.75rem;
+  color: var(--color-primary-navy);
+  margin-bottom: var(--space-1);
+}
+
+.section-subtitle {
+  font-size: 0.9375rem;
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-4);
+  max-width: 60ch;
+}
+

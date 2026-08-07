@@ -1,0 +1,56 @@
+.latest-proceedings-section {
+  background-color: var(--bg-primary);
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.proceedings-header-row {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: var(--space-3);
+  margin-bottom: var(--space-4);
+  flex-wrap: wrap;
+}
+
+.view-all-btn {
+  margin-bottom: var(--space-2);
+}
+
+/* Track Tabs */
+.proceedings-track-tabs {
+  display: flex;
+  align-items: center;
+  gap: var(--space-1);
+  border-bottom: 2px solid var(--border-subtle);
+  margin-bottom: var(--space-4);
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.track-tab {
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid transparent;
+  padding: 10px 16px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  cursor: pointer;
+  margin-bottom: -2px;
+  transition: all var(--transition-fast);
+}
+
+.track-tab:hover {
+  color: var(--text-primary);
+}
+
+.track-tab.active {
+  color: var(--accent-teal);
+  border-bottom-color: var(--accent-teal);
+}
+
+.proceedings-list {
+  display: flex;
+  flex-direction: column;
+}
+

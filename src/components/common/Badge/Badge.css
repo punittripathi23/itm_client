@@ -1,0 +1,194 @@
+.academic-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-0-5);
+  padding: 3px 8px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  font-family: var(--font-sans);
+  border-radius: var(--radius-xs);
+  line-height: 1.2;
+  white-space: nowrap;
+  letter-spacing: 0.02em;
+  border: 1px solid transparent;
+}
+
+.badge-link {
+  text-decoration: none;
+  display: inline-flex;
+}
+
+.badge-link:hover .academic-badge {
+  filter: brightness(0.95);
+}
+
+/* Variant Styles (Light Mode) */
+.badge-doi {
+  background-color: #e6f0fa;
+  color: var(--color-doi);
+  border-color: #b8d5ed;
+}
+
+.badge-orcid {
+  background-color: #f3f9e6;
+  color: #4b6600;
+  border-color: #d4e899;
+}
+
+.badge-scopus {
+  background-color: #fff3eb;
+  color: #c2410c;
+  border-color: #fed7aa;
+}
+
+.badge-wos {
+  background-color: #f3e8ff;
+  color: var(--color-wos);
+  border-color: #d8b4fe;
+}
+
+.badge-open-access {
+  background-color: #fff7ed;
+  color: #c2410c;
+  border-color: #ffedd5;
+}
+
+.badge-peer-reviewed {
+  background-color: #f0fdfa;
+  color: var(--accent-teal);
+  border-color: #99f6e4;
+}
+
+.badge-info {
+  background-color: var(--bg-elevated);
+  color: var(--text-secondary);
+  border-color: var(--border-subtle);
+}
+
+.badge-success {
+  background-color: #ecfdf5;
+  color: var(--accent-emerald);
+  border-color: #a7f3d0;
+}
+
+.badge-warning {
+  background-color: #fffbeb;
+  color: #d97706;
+  border-color: #fde68a;
+}
+
+.badge-danger {
+  background-color: #fef2f2;
+  color: #dc2626;
+  border-color: #fecaca;
+}
+
+/* Manuscript Status Badges */
+.badge-draft {
+  background-color: #f1f5f9;
+  color: #475569;
+  border-color: #cbd5e1;
+}
+
+.badge-submitted {
+  background-color: #e0f2fe;
+  color: #0369a1;
+  border-color: #bae6fd;
+}
+
+.badge-under-review {
+  background-color: #fef3c7;
+  color: #b45309;
+  border-color: #fde68a;
+}
+
+.badge-revision {
+  background-color: #ffedd5;
+  color: #c2410c;
+  border-color: #fed7aa;
+}
+
+.badge-accepted {
+  background-color: #dcfce7;
+  color: #15803d;
+  border-color: #bbf7d0;
+}
+
+.badge-rejected {
+  background-color: #fee2e2;
+  color: #b91c1c;
+  border-color: #fca5a5;
+}
+
+.badge-published {
+  background-color: #f0fdf4;
+  color: #166534;
+  border-color: #86efac;
+}
+
+.badge-icon {
+  display: inline-flex;
+  align-items: center;
+}
+
+/* Dark Mode Badge Overrides (Light Text & Dark Accent Backgrounds) */
+[data-theme="dark"] .badge-doi {
+  background-color: #1e3a8a;
+  color: #bfdbfe;
+  border-color: #2563eb;
+}
+
+[data-theme="dark"] .badge-orcid {
+  background-color: #14532d;
+  color: #d9f99d;
+  border-color: #16a34a;
+}
+
+[data-theme="dark"] .badge-scopus {
+  background-color: #7c2d12;
+  color: #ffedd5;
+  border-color: #ea580c;
+}
+
+[data-theme="dark"] .badge-wos {
+  background-color: #4c1d95;
+  color: #f3e8ff;
+  border-color: #7c3aed;
+}
+
+[data-theme="dark"] .badge-open-access {
+  background-color: #7c2d12;
+  color: #ffedd5;
+  border-color: #ea580c;
+}
+
+[data-theme="dark"] .badge-peer-reviewed {
+  background-color: #134e4a;
+  color: #99f6e4;
+  border-color: #0d9488;
+}
+
+[data-theme="dark"] .badge-info {
+  background-color: var(--bg-elevated);
+  color: var(--text-primary);
+  border-color: var(--border-strong);
+}
+
+[data-theme="dark"] .badge-success {
+  background-color: #064e3b;
+  color: #a7f3d0;
+  border-color: #059669;
+}
+
+[data-theme="dark"] .badge-warning {
+  background-color: #78350f;
+  color: #fef3c7;
+  border-color: #d97706;
+}
+
+[data-theme="dark"] .badge-danger {
+  background-color: #7f1d1d;
+  color: #fecaca;
+  border-color: #dc2626;
+}
+

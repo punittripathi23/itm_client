@@ -1,0 +1,38 @@
+.assign-reviewer-modal {
+  padding-top: 0.5rem;
+}
+
+.paper-title-preview {
+  font-size: 0.95rem;
+  color: var(--text-dark, #0f172a);
+  background-color: #f8fafc;
+  padding: 0.6rem 0.8rem;
+  border-radius: 6px;
+  border-left: 3px solid #2563eb;
+}
+
+.reviewer-list-container {
+  max-height: 220px;
+  overflow-y: auto;
+}
+
+.reviewer-option-card {
+  transition: background-color 0.15s ease;
+}
+
+.reviewer-option-card:hover {
+  background-color: #f1f5f9;
+}
+
+.reviewer-option-card.selected {
+  background-color: #dbeafe;
+  border-left: 4px solid #2563eb;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.border-none { border: none; }
+.outline-none { outline: none; }
+.w-full { width: 100%; }
