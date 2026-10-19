@@ -33,22 +33,24 @@
   align-items: center;
   gap: 0.5rem;
   padding: 0.75rem 1rem;
-  border: 1px solid var(--border-color, #cbd5e1);
-  border-radius: 8px;
-  background-color: #ffffff;
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius-md);
+  background-color: var(--bg-surface);
+  color: var(--text-primary);
   cursor: pointer;
   font-size: 0.85rem;
   transition: all 0.15s ease;
 }
 
 .recommendation-radio-card:hover {
-  background-color: #f8fafc;
+  background-color: var(--bg-elevated);
 }
 
 .recommendation-radio-card.selected {
-  border-color: #2563eb;
-  background-color: #eff6ff;
-  color: #1e40af;
+  border-color: var(--accent-teal);
+  background-color: var(--primary-light);
+  color: var(--accent-teal);
+  font-weight: 600;
 }
 
 .inline-icon {

@@ -94,43 +94,44 @@ h4 { font-size: 1.125rem; font-weight: 600; }
 
 /* Level 1 CTA: Primary Teal Solid */
 .btn-primary {
-  background-color: var(--color-accent-teal);
-  color: var(--color-secondary-white);
-  border-color: var(--color-accent-teal);
+  background-color: var(--accent-teal);
+  color: #ffffff;
+  border-color: var(--accent-teal);
 }
 .btn-primary:hover {
-  background-color: var(--color-accent-teal-hover);
-  border-color: var(--color-accent-teal-hover);
+  background-color: var(--accent-teal-hover);
+  border-color: var(--accent-teal-hover);
 }
 
-/* Level 2 CTA: Secondary Navy / Muted Outline */
+/* Level 2 CTA: Secondary Surface / Outline */
 .btn-secondary {
-  background-color: var(--color-secondary-white);
-  color: var(--color-primary-navy);
-  border-color: var(--color-border-subtle);
+  background-color: var(--bg-surface);
+  color: var(--text-primary);
+  border-color: var(--border-strong);
 }
 .btn-secondary:hover {
-  background-color: var(--color-bg-subtle);
-  border-color: var(--color-border-hover);
+  background-color: var(--bg-elevated);
+  border-color: var(--border-focus);
 }
 
 /* Level 3 CTA: Tertiary Text-only Link */
 .btn-tertiary {
   background-color: transparent;
-  color: var(--color-accent-teal);
+  color: var(--accent-teal);
   padding: var(--space-1) var(--space-1);
 }
 .btn-tertiary:hover {
-  color: var(--color-accent-teal-hover);
+  color: var(--accent-teal-hover);
   text-decoration: underline;
 }
 
 .btn-navy {
-  background-color: var(--color-primary-navy);
-  color: var(--color-secondary-white);
+  background-color: var(--bg-header);
+  color: #ffffff;
+  border-color: var(--bg-header);
 }
 .btn-navy:hover {
-  background-color: var(--color-navy-800);
+  opacity: 0.9;
 }
 
 .btn-sm {
@@ -195,7 +196,7 @@ h4 { font-size: 1.125rem; font-weight: 600; }
 
 .section-title {
   font-size: 1.75rem;
-  color: var(--color-primary-navy);
+  color: var(--text-primary);
   margin-bottom: var(--space-1);
 }
 

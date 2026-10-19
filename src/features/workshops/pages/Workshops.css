@@ -18,11 +18,24 @@
 
 .workshop-card {
   padding: 2.25rem;
-  border-radius: var(--radius-xl);
-  border: 1px solid var(--border);
-  background: var(--bg-secondary);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border-subtle);
+  background: var(--bg-surface);
+  box-shadow: var(--shadow-card);
   display: flex;
   flex-direction: column;
+  transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.2s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.2s ease;
+}
+
+.workshop-card:hover {
+  transform: translateY(-2px);
+  border-color: rgba(13, 148, 136, 0.35);
+  box-shadow: var(--shadow-card-hover);
+}
+
+[data-theme="dark"] .workshop-card:hover {
+  border-color: rgba(45, 212, 191, 0.35);
+  box-shadow: var(--shadow-card-hover);
 }
 
 .workshop-badge-row {

@@ -17,8 +17,8 @@
   left: 0;
   bottom: 0;
   width: 260px;
-  background-color: var(--bg-secondary);
-  border-right: 1px solid var(--border);
+  background-color: var(--bg-surface);
+  border-right: 1px solid var(--border-subtle);
   display: flex;
   flex-direction: column;
   z-index: 100;
@@ -35,7 +35,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 0 1.5rem;
-  border-bottom: 1px solid var(--border);
+  border-bottom: 1px solid var(--border-subtle);
 }
 
 .sidebar-collapsed .admin-sidebar-header {
@@ -153,8 +153,8 @@
   align-items: center;
   justify-content: space-between;
   padding: 0 2rem;
-  border-bottom: 1px solid var(--border);
-  background-color: var(--bg-secondary);
+  border-bottom: 1px solid var(--border-subtle);
+  background-color: var(--bg-surface);
   position: sticky;
   top: 0;
   z-index: 90;
@@ -163,6 +163,7 @@
 .admin-header-title {
   font-size: 1.25rem;
   font-weight: 700;
+  color: var(--text-primary);
 }
 
 .admin-header-actions {
@@ -175,7 +176,7 @@
   width: 36px;
   height: 36px;
   border-radius: var(--radius-md);
-  border: 1px solid var(--border);
+  border: 1px solid var(--border-subtle);
   display: flex;
   align-items: center;
   justify-content: center;

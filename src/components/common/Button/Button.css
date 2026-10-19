@@ -22,16 +22,17 @@
   width: 100%;
 }
 
-/* 3 CTA Hierarchy Levels (Zero Gradients) */
-/* Level 1: Primary Navy / Accent Blue (Dark Mode) */
+/* Level 1: Primary Teal Solid */
 .btn-primary {
-  background-color: var(--accent-primary);
-  color: var(--text-on-header);
-  border-color: var(--accent-primary);
+  background-color: var(--accent-teal);
+  color: #ffffff;
+  border-color: var(--accent-teal);
 }
 
 .btn-primary:hover:not(:disabled) {
-  opacity: 0.92;
+  background-color: var(--accent-teal-hover);
+  border-color: var(--accent-teal-hover);
+  opacity: 0.96;
 }
 
 /* Level 2: Secondary / Surface Outline */
