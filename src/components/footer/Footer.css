@@ -1,16 +1,18 @@
 /* Academic Footer Styling */
 .academic-footer {
-  background-color: var(--color-primary-navy);
-  color: #94a3b8;
-  border-top: 2px solid var(--color-accent-teal);
+  background-color: var(--bg-footer);
+  color: var(--text-secondary);
+  border-top: 2px solid var(--accent-teal);
   margin-top: auto;
+  transition: background-color var(--transition-fast), color var(--transition-fast);
 }
 
 /* Indexing Bar */
 .footer-indexing-bar {
-  background-color: #081220;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  background-color: #ffffff;
+  border-bottom: 1px solid var(--border-subtle);
   padding: var(--space-2) 0;
+  transition: background-color var(--transition-fast), border-color var(--transition-fast);
 }
 
 .indexing-container {
@@ -25,13 +27,13 @@
   display: flex;
   align-items: center;
   gap: 6px;
-  color: var(--color-secondary-white);
+  color: var(--text-primary);
   font-size: 0.8125rem;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .indexing-icon {
-  color: var(--color-accent-teal);
+  color: var(--accent-teal);
 }
 
 .indexing-badges {
@@ -64,44 +66,46 @@
 .footer-shield {
   width: 32px;
   height: 32px;
-  background-color: rgba(255, 255, 255, 0.08);
+  background-color: var(--bg-header);
   border-radius: var(--radius-xs);
   display: flex;
   align-items: center;
   justify-content: center;
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .shield-icon {
-  color: var(--color-accent-teal);
+  color: var(--accent-teal);
 }
 
 .footer-brand-title {
   display: block;
-  color: var(--color-secondary-white);
+  color: var(--text-primary);
   font-weight: 700;
   font-size: 1rem;
 }
 
 .footer-brand-tagline {
   display: block;
-  color: #64748b;
+  color: var(--text-tertiary);
   font-size: 0.75rem;
 }
 
 .footer-mission-statement {
   font-size: 0.8125rem;
   line-height: 1.6;
-  color: #94a3b8;
+  color: var(--text-secondary);
 }
 
 .issn-block {
-  background-color: rgba(255, 255, 255, 0.04);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  background-color: #ffffff;
+  border: 1px solid var(--border-subtle);
   border-radius: var(--radius-xs);
   padding: var(--space-1-5, 10px) var(--space-2);
   display: flex;
   flex-direction: column;
   gap: 4px;
+  box-shadow: 0 1px 3px rgba(15, 23, 42, 0.03);
 }
 
 .issn-item {
@@ -111,18 +115,18 @@
 }
 
 .issn-label {
-  color: #64748b;
+  color: var(--text-tertiary);
 }
 
 .issn-val {
-  color: var(--color-secondary-white);
+  color: var(--text-primary);
   font-weight: 600;
   font-family: monospace;
 }
 
 /* Col Titles */
 .footer-col-title {
-  color: var(--color-secondary-white);
+  color: var(--text-primary);
   font-size: 0.9375rem;
   font-weight: 700;
   margin-bottom: 4px;
@@ -134,7 +138,7 @@
   display: block;
   width: 24px;
   height: 2px;
-  background-color: var(--color-accent-teal);
+  background-color: var(--accent-teal);
   margin-top: 6px;
 }
 
@@ -148,14 +152,14 @@
 }
 
 .footer-nav-list a {
-  color: #cbd5e1;
+  color: var(--text-secondary);
   font-size: 0.8125rem;
   text-decoration: none;
   transition: color var(--transition-fast);
 }
 
 .footer-nav-list a:hover {
-  color: var(--color-accent-teal);
+  color: var(--accent-teal);
   text-decoration: underline;
 }
 
@@ -164,12 +168,12 @@
   align-items: flex-start;
   gap: 8px;
   font-size: 0.8125rem;
-  color: #cbd5e1;
+  color: var(--text-secondary);
   line-height: 1.4;
 }
 
 .contact-icon {
-  color: var(--color-accent-teal);
+  color: var(--accent-teal);
   flex-shrink: 0;
   margin-top: 2px;
 }
@@ -179,19 +183,21 @@
   align-items: center;
   gap: 6px;
   font-size: 0.75rem;
-  color: #a7f3d0;
-  background-color: rgba(5, 150, 105, 0.15);
-  border: 1px solid rgba(5, 150, 105, 0.3);
+  color: #047857;
+  background-color: rgba(5, 150, 105, 0.08);
+  border: 1px solid rgba(5, 150, 105, 0.25);
   padding: 6px 10px;
   border-radius: var(--radius-xs);
   margin-top: 6px;
+  font-weight: 500;
 }
 
 /* Bottom Bar */
 .footer-bottom-bar {
-  background-color: #050b14;
-  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  background-color: #f1f5f9;
+  border-top: 1px solid var(--border-subtle);
   padding: var(--space-2) 0;
+  transition: background-color var(--transition-fast), border-color var(--transition-fast);
 }
 
 .bottom-container {
@@ -204,7 +210,7 @@
 
 .copyright-text {
   font-size: 0.75rem;
-  color: #64748b;
+  color: var(--text-tertiary);
   margin: 0;
 }
 
@@ -215,18 +221,103 @@
 }
 
 .legal-links a {
-  color: #64748b;
+  color: var(--text-tertiary);
   font-size: 0.75rem;
   text-decoration: none;
+  transition: color var(--transition-fast);
 }
 
 .legal-links a:hover {
-  color: #cbd5e1;
+  color: var(--text-primary);
 }
 
 .legal-sep {
-  color: #334155;
+  color: var(--border-subtle);
   font-size: 0.75rem;
+}
+
+/* Dark Theme Overrides for Academic Footer */
+[data-theme="dark"] .academic-footer {
+  background-color: var(--bg-footer);
+  color: #94a3b8;
+}
+
+[data-theme="dark"] .footer-indexing-bar {
+  background-color: #081220;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+[data-theme="dark"] .indexing-label {
+  color: #ffffff;
+}
+
+[data-theme="dark"] .footer-brand-title {
+  color: #ffffff;
+}
+
+[data-theme="dark"] .footer-brand-tagline {
+  color: #64748b;
+}
+
+[data-theme="dark"] .footer-mission-statement {
+  color: #94a3b8;
+}
+
+[data-theme="dark"] .issn-block {
+  background-color: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: none;
+}
+
+[data-theme="dark"] .issn-label {
+  color: #64748b;
+}
+
+[data-theme="dark"] .issn-val {
+  color: #ffffff;
+}
+
+[data-theme="dark"] .footer-col-title {
+  color: #ffffff;
+}
+
+[data-theme="dark"] .footer-nav-list a {
+  color: #cbd5e1;
+}
+
+[data-theme="dark"] .footer-nav-list a:hover {
+  color: var(--accent-teal);
+}
+
+[data-theme="dark"] .footer-contact-info li {
+  color: #cbd5e1;
+}
+
+[data-theme="dark"] .open-access-notice {
+  color: #a7f3d0;
+  background-color: rgba(5, 150, 105, 0.15);
+  border: 1px solid rgba(5, 150, 105, 0.3);
+}
+
+[data-theme="dark"] .footer-bottom-bar {
+  background-color: #050b14;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+[data-theme="dark"] .copyright-text {
+  color: #64748b;
+}
+
+[data-theme="dark"] .legal-links a {
+  color: #64748b;
+}
+
+[data-theme="dark"] .legal-links a:hover {
+  color: #cbd5e1;
+}
+
+[data-theme="dark"] .legal-sep {
+  color: #334155;
 }
 
 @media (max-width: 1024px) {

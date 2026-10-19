@@ -25,17 +25,31 @@
 .section-title {
   font-size: 1.5rem;
   font-weight: 700;
-  border-bottom: 2px solid var(--border);
+  color: var(--text-primary);
+  border-bottom: 2px solid var(--border-subtle);
   padding-bottom: 0.5rem;
 }
 
 .conference-card {
-  border-radius: var(--radius-xl);
-  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border-subtle);
   padding: 2rem;
-  background: var(--bg-secondary);
+  background: var(--bg-surface);
+  box-shadow: var(--shadow-card);
   display: flex;
   flex-direction: column;
+  transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.2s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.2s ease;
+}
+
+.conference-card:hover {
+  transform: translateY(-2px);
+  border-color: rgba(13, 148, 136, 0.35);
+  box-shadow: var(--shadow-card-hover);
+}
+
+[data-theme="dark"] .conference-card:hover {
+  border-color: rgba(45, 212, 191, 0.35);
+  box-shadow: var(--shadow-card-hover);
 }
 
 .conference-card.past {
@@ -54,6 +68,8 @@
 
 .conf-title {
   font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--text-primary);
   margin-bottom: 0.5rem;
 }
 

@@ -8,11 +8,11 @@
 }
 
 .admin-table-wrapper {
-  border: 1px solid var(--border);
-  border-radius: var(--radius-xl);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
   overflow: hidden;
-  background: var(--bg-secondary);
-  box-shadow: var(--shadow-sm);
+  background: var(--bg-surface);
+  box-shadow: var(--shadow-card);
   margin-bottom: 1rem;
 }
 
@@ -24,17 +24,17 @@
 }
 
 .admin-table th {
-  background: var(--bg-primary);
+  background: var(--bg-elevated);
   padding: 1rem 1.25rem;
   font-weight: 700;
-  color: var(--text-secondary);
-  border-bottom: 1px solid var(--border);
-  font-family: var(--font-heading);
+  color: var(--text-primary);
+  border-bottom: 1px solid var(--border-subtle);
+  font-family: var(--font-sans);
 }
 
 .admin-table td {
   padding: 1rem 1.25rem;
-  border-bottom: 1px solid var(--border);
+  border-bottom: 1px solid var(--border-subtle);
   color: var(--text-primary);
 }
 

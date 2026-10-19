@@ -62,21 +62,23 @@
   align-items: flex-start;
   gap: 1.25rem;
   padding: 1.5rem;
-  border-radius: var(--radius-xl);
-  border: 1px solid var(--border);
-  background: var(--bg-secondary);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border-subtle);
+  background: var(--bg-surface);
+  box-shadow: var(--shadow-card);
 }
 
 .contact-detail-card .contact-icon {
   width: 24px;
   height: 24px;
-  color: var(--primary);
+  color: var(--accent-teal);
   margin-top: 4px;
   flex-shrink: 0;
 }
 
 .contact-detail-card h4 {
   font-size: 1rem;
+  color: var(--text-primary);
   margin-bottom: 0.25rem;
 }
 
@@ -89,14 +91,15 @@
 /* Form panel */
 .contact-form-panel {
   padding: 2.5rem;
-  border-radius: var(--radius-xl);
-  border: 1px solid var(--border);
-  background: var(--bg-secondary);
-  box-shadow: var(--shadow-md);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border-subtle);
+  background: var(--bg-surface);
+  box-shadow: var(--shadow-card);
 }
 
 .contact-form-panel h3 {
   font-size: 1.4rem;
+  color: var(--text-primary);
   margin-bottom: 0.25rem;
 }
 

@@ -25,9 +25,10 @@
 
 /* Sidebar filter panel */
 .filters-sidebar {
-  border-radius: var(--radius-xl);
-  border: 1px solid var(--border);
-  background: var(--bg-secondary);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border-subtle);
+  background: var(--bg-surface);
+  box-shadow: var(--shadow-card);
   padding: 1.5rem;
   position: sticky;
   top: 90px;
@@ -45,14 +46,14 @@
 .clear-filters-btn {
   font-size: 0.8rem;
   font-weight: 700;
-  color: var(--primary);
+  color: var(--accent-teal);
   background: none;
   border: none;
   cursor: pointer;
 }
 
 .clear-filters-btn:hover {
-  color: var(--primary-hover);
+  color: var(--accent-teal-hover);
 }
 
 .filters-body {
@@ -85,14 +86,27 @@
 }
 
 .paper-row-card {
-  border-radius: var(--radius-xl);
-  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border-subtle);
   padding: 1.75rem;
   display: flex;
   gap: 1.5rem;
   justify-content: space-between;
   align-items: flex-start;
-  background: var(--bg-secondary);
+  background: var(--bg-surface);
+  box-shadow: var(--shadow-card);
+  transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.2s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.2s ease;
+}
+
+.paper-row-card:hover {
+  transform: translateY(-2px);
+  border-color: rgba(13, 148, 136, 0.35);
+  box-shadow: var(--shadow-card-hover);
+}
+
+[data-theme="dark"] .paper-row-card:hover {
+  border-color: rgba(45, 212, 191, 0.35);
+  box-shadow: var(--shadow-card-hover);
 }
 
 .paper-row-content {

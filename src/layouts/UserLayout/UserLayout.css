@@ -5,9 +5,8 @@
 }
 
 .user-dashboard-header {
-  background: radial-gradient(circle at top right, var(--primary-light), transparent 50%),
-              var(--bg-secondary);
-  border-bottom: 1px solid var(--border);
+  background: var(--bg-surface);
+  border-bottom: 1px solid var(--border-subtle);
   padding: 3rem 0 2rem 0;
   margin-top: 70px;
 }
@@ -15,6 +14,7 @@
 .dashboard-header-content h1 {
   font-size: 1.8rem;
   font-weight: 800;
+  color: var(--text-primary);
   margin-bottom: 0.25rem;
 }
 
@@ -37,8 +37,10 @@
 }
 
 .user-sidebar {
-  border-radius: var(--radius-xl);
-  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border-subtle);
+  background: var(--bg-surface);
+  box-shadow: var(--shadow-card);
   padding: 1.25rem;
 }
 
@@ -61,21 +63,21 @@
 }
 
 .user-sidebar-link:hover {
-  background: var(--bg-tertiary);
-  color: var(--primary);
+  background: var(--bg-elevated);
+  color: var(--accent-teal);
 }
 
 .user-sidebar-link.active {
   background: var(--primary-light);
-  color: var(--primary);
+  color: var(--accent-teal);
 }
 
 .user-dashboard-content {
-  background: var(--bg-secondary);
-  border: 1px solid var(--border);
-  border-radius: var(--radius-xl);
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
   padding: 2rem;
-  box-shadow: var(--shadow-sm);
+  box-shadow: var(--shadow-card);
   min-height: 450px;
 }
 

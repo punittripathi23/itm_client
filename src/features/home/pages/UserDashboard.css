@@ -11,22 +11,24 @@
 .user-stat-box {
   padding: 1.5rem;
   border-radius: var(--radius-lg);
-  border: 1px solid var(--border);
+  border: 1px solid var(--border-subtle);
   display: flex;
   align-items: center;
   gap: 1.25rem;
-  background: var(--bg-primary);
+  background: var(--bg-surface);
+  box-shadow: var(--shadow-card);
 }
 
 .user-stat-box .box-icon {
   width: 32px;
   height: 32px;
-  color: var(--primary);
+  color: var(--accent-teal);
 }
 
 .user-stat-box h3 {
   font-size: 1.6rem;
   font-weight: 800;
+  color: var(--text-primary);
   line-height: 1;
 }
 
@@ -43,6 +45,7 @@
 
 .dashboard-section h2 {
   font-size: 1.35rem;
+  color: var(--text-primary);
 }
 
 .bookmarks-grid {
@@ -52,8 +55,9 @@
 .bookmark-card {
   padding: 1.5rem;
   border-radius: var(--radius-lg);
-  border: 1px solid var(--border);
-  background: var(--bg-secondary);
+  border: 1px solid var(--border-subtle);
+  background: var(--bg-surface);
+  box-shadow: var(--shadow-card);
   gap: 1.5rem;
 }
 

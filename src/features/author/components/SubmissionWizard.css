@@ -1,16 +1,16 @@
 .submission-wizard-card {
-  background-color: var(--card-bg, #ffffff);
-  border: 1px solid var(--border-color, #e2e8f0);
-  border-radius: 12px;
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
   padding: 1.75rem;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+  box-shadow: var(--shadow-card);
 }
 
 .wizard-progress-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 1px solid var(--border-color, #e2e8f0);
+  border-bottom: 1px solid var(--border-subtle);
   padding-bottom: 1.25rem;
   margin-bottom: 1.5rem;
   overflow-x: auto;
@@ -30,9 +30,9 @@
   width: 34px;
   height: 34px;
   border-radius: 50%;
-  background-color: #f1f5f9;
-  border: 2px solid #cbd5e1;
-  color: #64748b;
+  background-color: var(--bg-elevated);
+  border: 2px solid var(--border-strong);
+  color: var(--text-tertiary);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -40,27 +40,28 @@
 }
 
 .wizard-step-indicator.active .step-badge {
-  background-color: #dbeafe;
-  border-color: #2563eb;
-  color: #1d4ed8;
-  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+  background-color: var(--primary-light);
+  border-color: var(--accent-teal);
+  color: var(--accent-teal);
+  box-shadow: 0 0 0 3px rgba(13, 148, 136, 0.2);
 }
 
 .wizard-step-indicator.completed .step-badge {
-  background-color: #dcfce7;
-  border-color: #16a34a;
-  color: #15803d;
+  background-color: rgba(5, 150, 105, 0.15);
+  border-color: var(--accent-emerald);
+  color: var(--accent-emerald);
 }
 
 .step-label {
   font-size: 0.75rem;
   font-weight: 600;
-  color: #64748b;
+  color: var(--text-tertiary);
   text-align: center;
 }
 
 .wizard-step-indicator.active .step-label {
-  color: #0f172a;
+  color: var(--text-primary);
+  font-weight: 700;
 }
 
 .wizard-body {
@@ -70,13 +71,13 @@
 .step-title {
   font-size: 1.2rem;
   font-weight: 700;
-  color: var(--text-dark, #0f172a);
+  color: var(--text-primary);
   margin-bottom: 0.25rem;
 }
 
 .step-subtitle {
   font-size: 0.85rem;
-  color: var(--text-muted, #64748b);
+  color: var(--text-secondary);
   margin-bottom: 1.25rem;
 }
 
@@ -84,7 +85,7 @@
   display: block;
   font-size: 0.85rem;
   font-weight: 600;
-  color: var(--text-dark, #0f172a);
+  color: var(--text-primary);
   margin-bottom: 0.4rem;
 }
 
@@ -96,30 +97,31 @@
 .form-input, .form-textarea {
   width: 100%;
   padding: 0.6rem 0.8rem;
-  border: 1px solid var(--border-color, #cbd5e1);
-  border-radius: 6px;
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius-sm);
   font-size: 0.875rem;
-  background-color: var(--input-bg, #ffffff);
-  color: var(--text-dark, #0f172a);
+  background-color: var(--bg-elevated);
+  color: var(--text-primary);
   outline: none;
   transition: border-color 0.15s ease;
 }
 
 .form-input:focus, .form-textarea:focus {
-  border-color: #2563eb;
+  border-color: var(--accent-teal);
 }
 
 .form-hint {
   font-size: 0.75rem;
-  color: #64748b;
+  color: var(--text-tertiary);
   margin-top: 0.25rem;
   display: block;
 }
 
 .author-card {
-  border-radius: 8px;
+  border-radius: var(--radius-md);
   padding: 1rem;
-  background-color: #f8fafc;
+  background-color: var(--bg-elevated);
+  border: 1px solid var(--border-subtle);
 }
 
 .author-card-header {

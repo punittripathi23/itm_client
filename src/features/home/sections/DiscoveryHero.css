@@ -1,9 +1,12 @@
 .discovery-hero {
-  background: var(--bg-header);
-  color: var(--text-on-header);
+  background: var(--bg-hero);
+  color: var(--text-primary);
   padding-top: var(--space-8);
   padding-bottom: var(--space-8);
   border-bottom: 1px solid var(--border-subtle);
+  position: relative;
+  overflow: hidden;
+  transition: background var(--transition-fast), color var(--transition-fast);
 }
 
 .discovery-hero-container {
@@ -25,13 +28,15 @@
   display: inline-flex;
   align-items: center;
   gap: var(--space-1);
-  background-color: rgba(255, 255, 255, 0.08);
-  border: 1px solid rgba(255, 255, 255, 0.15);
+  background-color: rgba(13, 148, 136, 0.08);
+  border: 1px solid rgba(13, 148, 136, 0.2);
   padding: 4px 14px;
   border-radius: var(--radius-full);
   font-size: 0.78125rem;
   font-weight: 600;
-  color: #a7f3d0;
+  color: var(--accent-teal);
+  box-shadow: 0 1px 3px rgba(13, 148, 136, 0.05);
+  transition: all var(--transition-fast);
 }
 
 .trust-dot {
@@ -42,19 +47,19 @@
 }
 
 .hero-title {
-  font-size: 2.25rem;
+  font-size: 2.35rem;
   font-weight: 800;
-  color: var(--text-on-header);
+  color: var(--text-primary);
   line-height: 1.2;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.025em;
   margin: var(--space-1) 0;
 }
 
 .hero-subtitle {
-  font-size: 1rem;
-  color: #cbd5e1;
+  font-size: 1.05rem;
+  color: var(--text-secondary);
   max-width: 72ch;
-  line-height: 1.55;
+  line-height: 1.6;
   margin-bottom: var(--space-2);
 }
 
@@ -63,13 +68,14 @@
   width: 100%;
   background-color: var(--bg-surface);
   border: 1px solid var(--border-subtle);
-  border-radius: var(--radius-md);
-  box-shadow: var(--shadow-card);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-modal);
   padding: var(--space-6);
   display: flex;
   flex-direction: column;
   gap: var(--space-2);
   text-align: left;
+  transition: box-shadow var(--transition-fast), border-color var(--transition-fast);
 }
 
 .search-row-primary {
@@ -83,14 +89,16 @@
   display: flex;
   align-items: center;
   background-color: var(--bg-elevated);
-  border: 1px solid var(--border-strong);
+  border: 1px solid var(--border-subtle);
   border-radius: var(--radius-md);
   padding: 0 var(--space-2);
   height: 48px;
+  transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
 }
 
 .search-field-main:focus-within {
-  border-color: var(--border-focus);
+  border-color: var(--accent-teal);
+  box-shadow: 0 0 0 3px rgba(13, 148, 136, 0.12);
 }
 
 .search-icon-hero {
@@ -113,11 +121,17 @@
   align-items: center;
   gap: 6px;
   background-color: var(--bg-elevated);
-  border: 1px solid var(--border-strong);
+  border: 1px solid var(--border-subtle);
   border-radius: var(--radius-md);
   padding: 0 12px;
   height: 48px;
   flex-shrink: 0;
+  transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.search-select-wrapper:focus-within {
+  border-color: var(--accent-teal);
+  box-shadow: 0 0 0 3px rgba(13, 148, 136, 0.12);
 }
 
 .select-icon {
@@ -177,9 +191,9 @@
 }
 
 .category-pill:hover, .category-pill.active {
-  background-color: var(--accent-primary);
-  color: var(--text-on-header);
-  border-color: var(--accent-primary);
+  background-color: var(--accent-teal);
+  color: #ffffff;
+  border-color: var(--accent-teal);
 }
 
 /* Stats Strip */
@@ -189,8 +203,8 @@
   justify-content: center;
   gap: var(--space-4);
   margin-top: var(--space-3);
-  padding-top: var(--space-2);
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: var(--space-3);
+  border-top: 1px solid var(--border-subtle);
   width: 100%;
 }
 
@@ -201,21 +215,63 @@
 }
 
 .stat-number {
-  font-size: 1.25rem;
+  font-size: 1.35rem;
   font-weight: 800;
-  color: var(--text-on-header);
+  color: var(--text-primary);
   line-height: 1;
 }
 
 .stat-label {
   font-size: 0.75rem;
-  color: #cbd5e1;
+  color: var(--text-secondary);
+  font-weight: 500;
   margin-top: 4px;
 }
 
 .stat-divider {
   width: 1px;
   height: 24px;
+  background-color: var(--border-subtle);
+}
+
+/* Dark Theme Overrides */
+[data-theme="dark"] .discovery-hero {
+  background: var(--bg-hero);
+  color: var(--text-on-header);
+}
+
+[data-theme="dark"] .hero-trust-badge {
+  background-color: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: #a7f3d0;
+  box-shadow: none;
+}
+
+[data-theme="dark"] .hero-title {
+  color: var(--text-on-header);
+}
+
+[data-theme="dark"] .hero-subtitle {
+  color: #cbd5e1;
+}
+
+[data-theme="dark"] .hero-search-card {
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+}
+
+[data-theme="dark"] .hero-stats-strip {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+[data-theme="dark"] .stat-number {
+  color: var(--text-on-header);
+}
+
+[data-theme="dark"] .stat-label {
+  color: #cbd5e1;
+}
+
+[data-theme="dark"] .stat-divider {
   background-color: rgba(255, 255, 255, 0.15);
 }
 

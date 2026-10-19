@@ -6,12 +6,12 @@
 .dashboard-title {
   font-size: 1.6rem;
   font-weight: 800;
-  color: var(--text-dark, #0f172a);
+  color: var(--text-primary);
   margin-bottom: 0.25rem;
 }
 
 .dashboard-subtitle {
-  color: var(--text-muted, #64748b);
+  color: var(--text-secondary);
   font-size: 0.9rem;
 }
 
@@ -22,14 +22,14 @@
 }
 
 .stat-card {
-  background-color: var(--card-bg, #ffffff);
-  border: 1px solid var(--border-color, #e2e8f0);
-  border-radius: 10px;
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
   padding: 1.25rem;
   display: flex;
   align-items: center;
   gap: 1rem;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+  box-shadow: var(--shadow-card);
 }
 
 .stat-icon-wrapper {
@@ -41,30 +41,30 @@
   justify-content: center;
 }
 
-.stat-icon-wrapper.blue { background-color: #dbeafe; color: #1d4ed8; }
-.stat-icon-wrapper.amber { background-color: #fef3c7; color: #b45309; }
-.stat-icon-wrapper.orange { background-color: #ffedd5; color: #c2410c; }
-.stat-icon-wrapper.green { background-color: #dcfce7; color: #15803d; }
+.stat-icon-wrapper.blue { background-color: rgba(37, 99, 235, 0.15); color: #38bdf8; }
+.stat-icon-wrapper.amber { background-color: rgba(217, 119, 6, 0.15); color: #f59e0b; }
+.stat-icon-wrapper.orange { background-color: rgba(234, 88, 12, 0.15); color: #fb923c; }
+.stat-icon-wrapper.green { background-color: rgba(5, 150, 105, 0.15); color: #10b981; }
 
 .stat-value {
   display: block;
   font-size: 1.4rem;
   font-weight: 800;
-  color: var(--text-dark, #0f172a);
+  color: var(--text-primary);
   line-height: 1.1;
 }
 
 .stat-label {
   font-size: 0.78rem;
   font-weight: 600;
-  color: #64748b;
+  color: var(--text-tertiary);
 }
 
 .author-tabs-bar {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  border-bottom: 1px solid var(--border-color, #cbd5e1);
+  border-bottom: 1px solid var(--border-subtle);
   padding-bottom: 0.5rem;
 }
 
@@ -75,17 +75,17 @@
   padding: 0.5rem 1rem;
   font-size: 0.875rem;
   font-weight: 600;
-  color: #64748b;
+  color: var(--text-secondary);
   background: transparent;
   border: none;
-  border-radius: 6px;
+  border-radius: var(--radius-sm);
   cursor: pointer;
   transition: all 0.15s ease;
 }
 
 .tab-btn.active, .tab-btn:hover {
-  color: #1e3a8a;
-  background-color: #f1f5f9;
+  color: var(--accent-teal);
+  background-color: var(--bg-elevated);
 }
 
 .status-filter-row {
@@ -100,29 +100,32 @@
   font-size: 0.78rem;
   font-weight: 600;
   border-radius: 20px;
-  border: 1px solid #cbd5e1;
-  background-color: #ffffff;
-  color: #475569;
+  border: 1px solid var(--border-strong);
+  background-color: var(--bg-surface);
+  color: var(--text-secondary);
   cursor: pointer;
+  transition: all var(--transition-fast);
 }
 
 .filter-chip.active {
-  background-color: #1e3a8a;
+  background-color: var(--accent-teal);
   color: #ffffff;
-  border-color: #1e3a8a;
+  border-color: var(--accent-teal);
 }
 
 .manuscript-card {
-  background-color: var(--card-bg, #ffffff);
-  border-radius: 10px;
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-card);
 }
 
 .manuscript-id-tag {
   font-family: monospace;
   font-weight: 700;
   font-size: 0.85rem;
-  color: #1e3a8a;
-  background-color: #eff6ff;
+  color: var(--accent-teal);
+  background-color: var(--bg-elevated);
   padding: 2px 6px;
   border-radius: 4px;
 }
@@ -130,12 +133,12 @@
 .manuscript-title {
   font-size: 1.1rem;
   font-weight: 700;
-  color: var(--text-dark, #0f172a);
+  color: var(--text-primary);
 }
 
 .btn-icon-refresh {
   background: transparent;
-  border: 1px solid #cbd5e1;
+  border: 1px solid var(--border-subtle);
   border-radius: 50%;
   width: 28px;
   height: 28px;
@@ -143,9 +146,9 @@
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  color: #64748b;
+  color: var(--text-tertiary);
 }
 
 .text-xs { font-size: 0.72rem; }
 .text-sm { font-size: 0.82rem; }
-.bg-subtle { background-color: #f8fafc; }
+.bg-subtle { background-color: var(--bg-elevated); }

@@ -14,8 +14,8 @@
 }
 
 .citation-modal-content {
-  background-color: var(--color-bg-card);
-  border: 1px solid var(--color-border-subtle);
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
   border-radius: var(--radius-md);
   box-shadow: var(--shadow-modal);
   width: 100%;
@@ -28,8 +28,8 @@
   align-items: center;
   justify-content: space-between;
   padding: var(--space-3);
-  background-color: var(--color-primary-navy);
-  color: var(--color-secondary-white);
+  background-color: var(--bg-header);
+  color: #ffffff;
 }
 
 .citation-modal-title-group {
@@ -39,19 +39,19 @@
 }
 
 .citation-modal-title-group h3 {
-  color: var(--color-secondary-white);
+  color: #ffffff;
   font-size: 1.125rem;
   margin: 0;
 }
 
 .modal-icon {
-  color: var(--color-accent-teal);
+  color: var(--accent-teal);
 }
 
 .citation-modal-close {
   background: transparent;
   border: none;
-  color: var(--color-text-subtle);
+  color: #cbd5e1;
   cursor: pointer;
   padding: var(--space-0-5);
   display: flex;
@@ -62,13 +62,13 @@
 }
 
 .citation-modal-close:hover {
-  color: var(--color-secondary-white);
+  color: #ffffff;
 }
 
 .citation-paper-summary {
   padding: var(--space-2) var(--space-3);
-  background-color: var(--color-bg-subtle);
-  border-bottom: 1px solid var(--color-border-subtle);
+  background-color: var(--bg-elevated);
+  border-bottom: 1px solid var(--border-subtle);
   display: flex;
   flex-direction: column;
   gap: 2px;
@@ -77,19 +77,19 @@
 .citation-paper-title {
   font-weight: 600;
   font-size: 0.875rem;
-  color: var(--color-primary-navy);
+  color: var(--text-primary);
   line-height: 1.3;
 }
 
 .citation-paper-meta {
   font-size: 0.75rem;
-  color: var(--color-text-subtle);
+  color: var(--text-tertiary);
 }
 
 .citation-tabs {
   display: flex;
-  border-bottom: 1px solid var(--color-border-subtle);
-  background-color: var(--color-bg-main);
+  border-bottom: 1px solid var(--border-subtle);
+  background-color: var(--bg-primary);
   padding-left: var(--space-3);
 }
 
@@ -100,18 +100,18 @@
   background: transparent;
   border: none;
   border-bottom: 2px solid transparent;
-  color: var(--color-text-muted);
+  color: var(--text-secondary);
   cursor: pointer;
   transition: all var(--transition-fast);
 }
 
 .citation-tab:hover {
-  color: var(--color-primary-navy);
+  color: var(--text-primary);
 }
 
 .citation-tab.active {
-  color: var(--color-accent-teal);
-  border-bottom-color: var(--color-accent-teal);
+  color: var(--accent-teal);
+  border-bottom-color: var(--accent-teal);
 }
 
 .citation-body {

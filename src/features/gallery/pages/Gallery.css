@@ -17,13 +17,20 @@
 }
 
 .album-card {
-  border-radius: var(--radius-xl);
-  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border-subtle);
   overflow: hidden;
   cursor: pointer;
-  background: var(--bg-secondary);
+  background: var(--bg-surface);
+  box-shadow: var(--shadow-card);
   display: flex;
   flex-direction: column;
+  transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.album-card:hover {
+  border-color: var(--border-strong);
+  box-shadow: var(--shadow-card-hover);
 }
 
 .album-cover-wrapper {
