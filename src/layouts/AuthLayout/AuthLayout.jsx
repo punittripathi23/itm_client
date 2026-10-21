@@ -19,7 +19,7 @@ export const AuthLayout = () => {
             <div className="auth-logo-icon">
               <GraduationCap size={28} />
             </div>
-            <h2>Bakliwal Portal</h2>
+            <h2>ITM-JET Portal</h2>
             <p>Welcome back! Please sign in or create an account to access resources.</p>
           </div>
           

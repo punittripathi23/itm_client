@@ -148,11 +148,11 @@ const DEFAULT_GALLERY = [
 const DEFAULT_CMS = {
   announcements: [
     { id: 'ann_1', text: 'Call for papers for IEEE Global Cloud Conference 2026 is now open. Submit by September 1, 2026.', date: '2026-08-04' },
-    { id: 'ann_2', text: 'Bakliwal Foundation publication portal launched officially today.', date: '2026-08-02' }
+    { id: 'ann_2', text: 'ITM-JET journal portal launched officially today.', date: '2026-08-02' }
   ],
   homeHeroTitle: 'Empowering Research, Digitally Accessing Knowledge',
   homeHeroSubtitle: 'The central gateway for premier academic publications, workshops, and scholarly conferences.',
-  aboutUsText: 'The Conference Publication Portal is a state-of-the-art web platform dedicated to hosting high-impact academic work. Established in affiliation with Bakliwal Foundation, our portal is designed to distribute research proceedings, secure academic papers, listing events, and manage publication indexes seamlessly.',
+  aboutUsText: 'ITM Journal of Engineering & Technology (ITM-JET) is a scholarly journal platform dedicated to sharing engineering and technology research.',
   contactEmail: 'contact@bakliwal.edu',
   contactPhone: '+91 98765 43210',
   contactAddress: 'Bakliwal Campus, Sector 5, Pune, Maharashtra, India'

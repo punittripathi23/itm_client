@@ -25,7 +25,7 @@ export const Gallery = () => {
     <div className="gallery-root container animate-fade-in">
       <div className="gallery-page-header">
         <h1>Event Media Gallery</h1>
-        <p>Browse photo albums and play video logs compiling highlights of Bakliwal Foundation cloud computing conferences.</p>
+        <p>Browse photo albums and video highlights from ITM-JET academic events.</p>
       </div>
 
       <div className="albums-grid grid-3">

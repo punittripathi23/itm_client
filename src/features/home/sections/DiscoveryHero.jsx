@@ -34,11 +34,11 @@ const DiscoveryHero = () => {
         <div className="hero-content">
           <div className="hero-trust-badge">
             <span className="trust-dot"></span>
-            <span>Official WeGrow Conference Proceedings & Publications</span>
+            <span>Official ITM-JET Journal Portal</span>
           </div>
 
           <h1 id="hero-title" className="hero-title">
-            WeGrow Conference Proceedings & Publications
+            ITM Journal of Engineering & Technology
           </h1>
 
           <p className="hero-subtitle">
@@ -52,7 +52,7 @@ const DiscoveryHero = () => {
                 <Search size={18} className="search-icon-hero" />
                 <input
                   type="text"
-                  placeholder="Search by Title, Author, Keyword, ORCID or DOI (e.g. 10.1109/ICCS.2025)..."
+                  placeholder="Search by Title, Author, Keyword, ORCID or DOI (e.g. xxxx)..."
                   value={searchQuery}
                   onChange={(e) => setSearchQuery(e.target.value)}
                   className="hero-search-input"

@@ -17,7 +17,7 @@ export const AuthCardLayout = ({
             <Shield size={24} className="shield-icon" />
             <Layers size={14} className="layers-icon" />
           </div>
-          <span className="auth-brand-name">WeGrow Conference Proceedings & Publications</span>
+          <span className="auth-brand-name">ITM Journal of Engineering & Technology (ITM-JET)</span>
         </div>
 
         <CardBox className="auth-card-box">
@@ -38,7 +38,7 @@ export const AuthCardLayout = ({
         </CardBox>
 
         <div className="auth-trust-notice">
-          <span>Official WeGrow Conference Proceedings & Publications- Single Sign-On for Authors, Reviewers & Editors</span>
+          <span>Official ITM-JET portal — Single Sign-On for Authors, Reviewers & Editors</span>
         </div>
       </div>
     </div>

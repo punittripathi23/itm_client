@@ -8,7 +8,7 @@ const FaqSection = () => {
   const faqs = [
     {
       question: 'How are DOI numbers assigned and registered for accepted papers?',
-      answer: 'Upon acceptance and final camera-ready PDF submission, each article is assigned a unique Crossref DOI prefix (10.1109/APCS.YYYY.XXXXXX). Metadata is submitted directly to the Crossref Registry within 48 hours of volume publication to ensure permanent URL resolving.'
+      answer: 'Upon acceptance and final manuscript submission, each article is assigned a unique DOI (xxxx). DOI metadata is registered with the relevant DOI agency after publication.'
     },
     {
       question: 'What is the double-blind peer review policy and editorial workflow?',
@@ -16,7 +16,7 @@ const FaqSection = () => {
     },
     {
       question: 'Are all conference proceedings indexed in Scopus and Web of Science?',
-      answer: 'Yes. Conference proceedings published under IEEE / Academic Press series are submitted immediately post-publication to Elsevier Scopus, Clarivate Web of Science (ESCI), DBLP, and Google Scholar for indexing evaluation.'
+      answer: 'ITM-JET publications may be submitted to relevant scholarly databases for indexing evaluation.'
     },
     {
       question: 'What Open Access licensing models are available for authors?',

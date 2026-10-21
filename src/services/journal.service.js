@@ -10,11 +10,11 @@ export const journalService = {
         {
           _id: 'j_1',
           id: 'j_1',
-          title: 'International Journal of Emerging Technologies & Applied Research',
-          shortName: 'IJETAR',
-          issn: '2583-1240',
-          eissn: '2583-1259',
-          doiPrefix: '10.5281/zenodo',
+          title: 'ITM Journal of Engineering & Technology',
+          shortName: 'ITM-JET',
+          issn: 'xxxx',
+          eissn: 'xxxx',
+          doiPrefix: 'xxxx',
           impactFactor: 3.42,
           indexing: ['Scopus', 'Web of Science', 'Google Scholar']
         }

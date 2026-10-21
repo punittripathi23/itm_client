@@ -167,7 +167,7 @@ export const Papers = () => {
 
       <div className="papers-page-header">
         <h1>Research Proceedings Index</h1>
-        <p>Browse, review abstracts, and access complete research proceedings compiled by the Bakliwal Foundation.</p>
+        <p>Browse, review abstracts, and access research published by ITM Journal of Engineering & Technology.</p>
       </div>
 
       <div className="papers-layout-grid">

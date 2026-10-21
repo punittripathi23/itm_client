@@ -61,11 +61,11 @@ const TrustMetricsSection = () => {
           <div className="transparency-stats">
             <div className="stat-pill">
               <span className="pill-key">ISSN (Print):</span>
-              <span className="pill-val">2831-9033</span>
+              <span className="pill-val">xxxx</span>
             </div>
             <div className="stat-pill">
               <span className="pill-key">e-ISSN (Online):</span>
-              <span className="pill-val">2831-9041</span>
+              <span className="pill-val">xxxx</span>
             </div>
             <div className="stat-pill">
               <span className="pill-key">Acceptance Rate:</span>

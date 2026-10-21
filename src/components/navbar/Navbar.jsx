@@ -83,11 +83,11 @@ export const Navbar = () => {
       <div className="top-utility-bar">
         <div className="container utility-container">
           <div className="utility-left">
-            <span className="utility-item">ISSN: 2583-1240 (Online)</span>
+            <span className="utility-item">ISSN: xxxx (Online)</span>
             <span className="utility-sep">|</span>
             <span className="utility-item">Scopus & Web of Science Indexed</span>
             <span className="utility-sep">|</span>
-            <span className="utility-item">DOI Prefix: 10.5281/zenodo</span>
+            <span className="utility-item">DOI Prefix: xxxx</span>
           </div>
           <div className="utility-right">
             <Link to="/author/submit" className="utility-link utility-submit-highlight">
@@ -116,8 +116,8 @@ export const Navbar = () => {
               <Layers className="logo-layers-icon" size={14} />
             </div>
             <div className="logo-text">
-              <span className="logo-title">WeGrow</span>
-              <span className="logo-subtitle">Journal & Proceedings System</span>
+              <span className="logo-title">ITM-JET</span>
+              <span className="logo-subtitle">ITM Journal of Engineering & Technology</span>
             </div>
           </Link>
 
@@ -335,4 +335,3 @@ export const Navbar = () => {
 };
 
 export default Navbar;
-

@@ -33,8 +33,8 @@ export const Footer = () => {
               <Shield size={20} className="shield-icon" />
             </div>
             <div>
-              <span className="footer-brand-title">WeGrow Digital Library</span>
-              <span className="footer-brand-tagline">Academic Press Conference Series</span>
+              <span className="footer-brand-title">ITM Journal of Engineering & Technology</span>
+              <span className="footer-brand-tagline">ITM-JET</span>
             </div>
           </div>
 
@@ -45,15 +45,15 @@ export const Footer = () => {
           <div className="issn-block">
             <div className="issn-item">
               <span className="issn-label">Print ISSN:</span>
-              <span className="issn-val">xxxx-xxxx</span>
+              <span className="issn-val">xxxx</span>
             </div>
             <div className="issn-item">
               <span className="issn-label">Online e-ISSN:</span>
-              <span className="issn-val">xxxx-xxxx</span>
+              <span className="issn-val">xxxx</span>
             </div>
             <div className="issn-item">
               <span className="issn-label">DOI Prefix:</span>
-              <span className="issn-val">xxxxxxxxxx</span>
+              <span className="issn-val">xxxx</span>
             </div>
           </div>
         </div>
@@ -110,7 +110,7 @@ export const Footer = () => {
       <div className="footer-bottom-bar">
         <div className="container bottom-container">
           <p className="copyright-text">
-            &copy; {new Date().getFullYear()} IEEE / Academic Press Conference Series. All Rights Reserved.
+            &copy; {new Date().getFullYear()} ITM Journal of Engineering & Technology. All Rights Reserved.
           </p>
           <div className="legal-links">
             <a href="#privacy">Privacy Policy</a>
@@ -126,4 +126,3 @@ export const Footer = () => {
 };
 
 export default Footer;
-

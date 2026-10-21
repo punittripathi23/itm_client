@@ -14,10 +14,10 @@ const CitationModal = ({ isOpen, onClose, paper }) => {
   const citationKey = `${firstAuthorLastName}${year}${paper.title ? paper.title.split(' ')[0].toLowerCase() : 'paper'}`;
 
   const citations = {
-    bibtex: `@inproceedings{${citationKey},\n  author    = {${authorsString.replace(/,/g, ' and')}},\n  title     = {${paper.title}},\n  booktitle = {${paper.conferenceName || 'Proceedings of International Conference'}},\n  volume    = {${paper.volume || '1'}},\n  number    = {${paper.issue || '1'}},\n  pages     = {${paper.pages || '101-112'}},\n  year      = {${year}},\n  publisher = {IEEE / Academic Press},\n  doi       = {${paper.doi || '10.1109/ICCS.2025.1029381'}}\n}`,
-    ris: `TY  - CONF\nTI  - ${paper.title}\n${paper.authors ? paper.authors.map(a => `AU  - ${a}`).join('\n') : ''}\nJO  - ${paper.conferenceName || 'Proceedings'}\nVL  - ${paper.volume || '1'}\nIS  - ${paper.issue || '1'}\nPY  - ${year}\nDO  - ${paper.doi || '10.1109/ICCS.2025.1029381'}\nER  -`,
-    ieee: `${authorsString}, "${paper.title}," in ${paper.conferenceName || 'Proc. Int. Conf.'}, vol. ${paper.volume || '1'}, no. ${paper.issue || '1'}, pp. ${paper.pages || '101-112'}, ${year}, doi: ${paper.doi || '10.1109/ICCS.2025.1029381'}.`,
-    apa: `${authorsString} (${year}). ${paper.title}. ${paper.conferenceName || 'Proceedings of International Conference'}, ${paper.volume || '1'}(${paper.issue || '1'}), ${paper.pages || '101-112'}. https://doi.org/${paper.doi || '10.1109/ICCS.2025.1029381'}`
+    bibtex: `@inproceedings{${citationKey},\n  author    = {${authorsString.replace(/,/g, ' and')}},\n  title     = {${paper.title}},\n  booktitle = {${paper.conferenceName || 'Proceedings of International Conference'}},\n  volume    = {${paper.volume || '1'}},\n  number    = {${paper.issue || '1'}},\n  pages     = {${paper.pages || '101-112'}},\n  year      = {${year}},\n  publisher = {ITM Journal of Engineering & Technology},\n  doi       = {${paper.doi || 'xxxx'}}\n}`,
+    ris: `TY  - CONF\nTI  - ${paper.title}\n${paper.authors ? paper.authors.map(a => `AU  - ${a}`).join('\n') : ''}\nJO  - ${paper.conferenceName || 'Proceedings'}\nVL  - ${paper.volume || '1'}\nIS  - ${paper.issue || '1'}\nPY  - ${year}\nDO  - ${paper.doi || 'xxxx'}\nER  -`,
+    ieee: `${authorsString}, "${paper.title}," in ${paper.conferenceName || 'Proc. Int. Conf.'}, vol. ${paper.volume || '1'}, no. ${paper.issue || '1'}, pp. ${paper.pages || '101-112'}, ${year}, doi: ${paper.doi || 'xxxx'}.`,
+    apa: `${authorsString} (${year}). ${paper.title}. ${paper.conferenceName || 'Proceedings of International Conference'}, ${paper.volume || '1'}(${paper.issue || '1'}), ${paper.pages || '101-112'}. https://doi.org/${paper.doi || 'xxxx'}`
   };
 
   const handleCopy = () => {

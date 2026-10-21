@@ -16,7 +16,7 @@ export const About = () => {
         <div className="container">
           <span>About Our Portal</span>
           <h1>Fostering Scholarly Innovation</h1>
-          <p>Learn about our digital index system, our affiliation with Bakliwal Foundation, and our future roadmap.</p>
+          <p>Learn about ITM-JET, our digital journal platform, and our future roadmap.</p>
         </div>
       </div>
 
@@ -24,7 +24,7 @@ export const About = () => {
         <div>
           <h2>Platform Overview</h2>
           <p className="about-desc">
-            {cms.aboutUsText || 'The Conference Publication Portal is a state-of-the-art web platform dedicated to hosting high-impact academic work. Established in affiliation with Bakliwal Foundation, our portal is designed to distribute research proceedings, secure academic papers, listing events, and manage publication indexes seamlessly.'}
+            {cms.aboutUsText || 'ITM Journal of Engineering & Technology (ITM-JET) is a scholarly journal platform dedicated to sharing engineering and technology research.'}
           </p>
           <p className="about-desc">
             Our priority is to establish a secure database interface facilitating role-based digital downloads. While guest researchers can quickly browse and audit abstracts and metadata, registered users can view and download complete publications.

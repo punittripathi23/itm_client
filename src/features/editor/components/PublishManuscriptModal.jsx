@@ -10,7 +10,7 @@ export const PublishManuscriptModal = ({ isOpen, onClose, submission, onPublishe
   const [volumeNumber, setVolumeNumber] = useState('14');
   const [issueNumber, setIssueNumber] = useState('2');
   const [pages, setPages] = useState('101-115');
-  const [doi, setDoi] = useState(`10.5281/zenodo.${Math.floor(1000000 + Math.random() * 9000000)}`);
+  const [doi, setDoi] = useState('xxxx');
   const [submitting, setSubmitting] = useState(false);
   const [success, setSuccess] = useState(false);
 

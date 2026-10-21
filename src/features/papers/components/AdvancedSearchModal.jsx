@@ -68,7 +68,7 @@ export const AdvancedSearchModal = ({ isOpen, onClose, onApplyFilters, currentFi
         <div className="grid-2 gap-2 mb-3">
           <Input
             label="DOI Prefix or Number"
-            placeholder="10.5281/zenodo"
+            placeholder="xxxx"
             value={doi}
             onChange={(e) => setDoi(e.target.value)}
           />
